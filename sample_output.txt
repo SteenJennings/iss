@@ -1,0 +1,20 @@
+c:\Python27>python iss.py
+1  satellite(s) found:
+ Satellite name:  ISS  , with ID:  25544
+**************************************************
+Satellite information for  ISS
+  altitude  :  412.974889591
+  daynum  :  2456712.70223
+  footprint  :  4471.54875714
+  id  :  25544
+  latitude  :  -0.938156522489
+  longitude  :  -106.378313403
+  name  :  iss
+  solar_lat  :  -9.49534765864
+  solar_lon  :  110.505884172
+  timestamp  :  1393217473
+  units  :  kilometers
+  velocity  :  27597.1315288
+  visibility  :  eclipsed
+
+c:\Python27>
