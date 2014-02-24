@@ -29,6 +29,9 @@ def print_satellite_info(satellite_info):
     print 'Satellite information for ', satellite_info['name'].upper()
     for key in sorted(satellite_info.keys()):
         print ' ', key, ' : ', satellite_info[key]
+        
+def get_lat_long(satellite_info):
+        return (satellite_info['latitude'], satellite_info['longitude'])
 
 if __name__ == '__main__':
     satellites_l = retrieve_satellites()
