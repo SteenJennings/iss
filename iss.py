@@ -35,3 +35,10 @@ if __name__ == '__main__':
     print_all_satellites(satellites_l)
     for satellite in satellites_l:
         print_satellite_info(retrieve_satellite_info(satellite['id']))
+        
+    '''
+    Plot the position on a statically retrieved Google maps picture and save it as a jpg
+    '''
+    latitude, longitude = get_lat_long(retrieve_satellite_info(satellite['id']))
+    gmap_url = ('http://maps.google.com/maps/api/staticmap?center=%f,%f&zoom=1&size=500x500&format=jpg&markers=color:red|%f,%f&maptype=terrain&sensor=false&') % (latitude, longitude, latitude, longitude)
+    urllib.urlretrieve(gmap_url, 'location.jpg')
